@@ -1,0 +1,64 @@
+ul.menu {
+  list-style-type:none;
+  padding: 50px 0 0 0;
+  width: 130px;
+  text-align: center;
+}
+
+ul.menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu a {
+  display: block;
+  text-decoration: none;
+  
+}
+
+ul.menu li {
+  margin-top: 1px;
+  font-family: Verdana;
+  font-size: 11px;
+  /*font-weight: bold;*/
+}
+
+ul.menu li a, ul.menu ul.menu li a {
+  color: #fff; /*blanco*/
+  padding: 0.4em;
+}
+
+ul.menu li a:hover, ul.menu ul.menu li a:hover {
+  background-image: url("#{resource['imagenes_web:transparencia.png']}");
+}
+
+/***Estilos de los li anidados***/
+ul.menu li ul li a, ul.menu ul.menu li ul li a {
+  /*background: #ccc;*/
+  font-family: verdana; /*arial*/
+  font-size: 10px; 
+  color: #ccc; /*fff*/ /*c00*/ /* #ccc: gris claro*/
+  padding: 2px;
+}
+
+ul.menu li ul li a:hover, ul.menu ul.menu li ul li a:hover {
+  background-image: url("#{resource['imagenes_web:transparencia.png']}");
+  border-left: 2px #c00 solid;
+  border-right: 2px #c00 solid;
+  padding-left: 5px;
+}
+
+ul.menu ul.menu li a:hover {
+    border-left: 0;
+    padding-left: 0.5em;
+}
+ul.menu ul.menu {
+    border-left: 5px #f00 solid;
+}
+/*Decoración del menú activo*/
+ul.menu a.active, ul.menu ul.menu li a.active, ul.menu a.active:hover, ul.menu ul.menu li a.active:hover {
+    text-decoration: none;
+    /*background: #c00;*/
+    background-image: url("#{resource['imagenes_web:transparencia.png']}");
+}

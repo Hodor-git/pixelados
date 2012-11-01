@@ -1,0 +1,321 @@
+@CHARSET "ISO-8859-1";
+
+/****CSS Reset****/
+* { margin: 0;
+    padding: 0;
+}
+
+a img, :link img, :visited img {
+    	border: 0;
+}
+/****************/
+
+body { 
+	/*background-image: url("../imagenes_web/fondo_body.jpg");*/
+	background-image: url("#{resource['imagenes_web:fondo_body.jpg']}");
+	background-repeat: no-repeat;
+	background-color: #006699; /*Web safe azul #006699*/
+}
+
+/**********Cabecera**************/
+/********************************/
+#cabecera{ 
+    background-image: url("#{resource['imagenes_web:fondo_cabecera.png']}");
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 143px;
+	overflow: hidden; 
+}
+
+#contenedor_img_cabecera {
+	margin: 0 auto;
+	width: 960px;
+	height: 170px;
+	/*background-image: url(../imagenes_web/cabecera.jpg);*/
+	overflow: hidden;
+}
+
+
+/********Fin de Cabecera*********/
+/********************************/ 
+ 
+#contenedor{
+	margin: 0 auto;
+	/*background-image: url(../imagenes_web/fondo_contenedor.jpg);*/ 
+    width: 960px; /*770*/ 
+	overflow: hidden; !important 
+}
+
+#menu_principal {
+	margin: 10px 0 0 10px;
+	width: 932px;
+	height: 78px;
+	background-image: url("#{resource['imagenes_web:menu_principal_qbert.png']}");
+}
+	
+
+#contenedor_menu {
+	margin: 0 auto;
+	padding: 5px 0 0 0;
+	width: 500px; /*451*/
+	height: 59px;
+}
+
+
+/*******************************************/
+/****Contenedor lateral izquierdo***********/ 
+#lateral_izquierdo{
+    margin: 10px 0 0 10px; 
+    float:left;
+	/*overflow: hidden;*/
+}
+
+/**Secciones lateral izquierdo**/
+#ordenadores {
+	margin: 0 0 10px 0;
+	background-image: url("#{resource['imagenes_web:fondo_ordenadores.png']}");
+	width: 130px;
+	height: 343px;
+}
+
+#consolas {
+	margin: 0 0 10px 0;
+	background-image: url("#{resource['imagenes_web:fondo_consolas.png']}");
+	width: 130px;
+	height: 320px;
+}
+
+#arcades {
+	background-image: url("#{resource['imagenes_web:fondo_arcades.png']}");
+	width: 130px;
+	height: 225px;
+}
+/**Fin de secciones lateral izquierdo**/
+
+/***Fin de Contenedor lateral izquierdo*****/
+/*******************************************/
+
+a {
+  outline: none;
+  color: white;
+}
+
+/***************************************/
+/****Contenedor lateral derecho*********/  
+#lateral_derecho{
+    margin: 10px 20px 0 0;
+    width: 130px;
+    height: 600px;
+    float: right;
+}
+/**Secciones lateral derecho**/
+#secciones {
+	margin: 0 0 10px 0;
+	background-image: url("#{resource['imagenes_web:fondo_secciones.png']}");
+	width: 130px;
+	height: 214px;
+}
+
+ul.menu_lateral_derecho {
+  list-style-type:none;
+  padding: 40px 0 0 0;
+  width: 130px;
+  text-align: center;
+}
+
+ul.menu_lateral_derecho li {
+  margin-top: 1px;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+ul.menu_lateral_derecho li a {
+  color: #fff; /*blanco*/
+  padding: 0.4em;
+  display: block;
+  text-decoration: none;
+}
+
+ul.menu_lateral_derecho li a:hover {
+  background-image: url("#{resource['imagenes_web:transparencia.png']}");
+}
+
+#fotosdeldia {
+	margin: 0 0 10px 0;
+	background-image: url("#{resource['imagenes_web:fotosdeldia.png']}");
+	width: 130px;
+	height: 396px;
+}
+
+/**Fin de secciones lateral derecho**/
+
+/***Fin de Contenedor lateral derecho***/
+/***************************************/
+
+
+/***************************************/
+/*********Contenedor principal**********/
+#principal{ 
+    margin: 7px 0 0 150px; 
+    padding: 4px 4px 4px 6px; 
+    width: 636px; 
+}
+
+#zonaAutenticacion {
+	margin: 0 0 10px 0;
+}
+
+#login {
+	
+	background-image: url("#{resource['imagenes_web:fondo_login.png']}");
+	width: 636px;
+	height: 40px;
+}
+
+#bienvenidos {
+	margin: 20px 0 0 0;
+	background-image: url("#{resource['imagenes_web:bienvenidos.png']}");
+	background-repeat: no-repeat;
+	width: 636px;
+	height: 174px;
+	overflow: hidden;
+}
+
+#bienvenidos p {
+	padding: 62px 21px 0 24px;
+}
+
+.noticias_top {
+	margin: 20px 0 0 0;
+	background-image: url("#{resource['imagenes_web:noticias_top.png']}");
+	width: 636px;
+	height: 44px;
+}
+
+.noticias_contenido {
+	background-image: url("#{resource['imagenes_web:fondo_noticias_contenido.png']}");
+	background-repeat: repeat-y;
+	padding: 0 25px 0 21px;
+	overflow: hidden;
+}
+
+.hoypresentamos_top {
+	/*margin: 2px 0 0 0;*/
+	background-image: url("#{resource['imagenes_web:hoypresentamos_top.png']}");
+	width: 636px;
+	height: 72px;
+}
+
+.hoypresentamos_contenido {
+	background-image: url("#{resource['imagenes_web:fondo_noticias_contenido.png']}");
+	padding: 0 23px 0 23px;
+	overflow: hidden;
+}
+
+.hoypresentamos_seccion {
+	margin: 15px 0 0 2px;
+	width: 636px;
+	height: 90px;
+}
+
+.hoypresentamos_seccion_categoria {
+	float: left;
+	width: 129px;
+	height: 90px;
+}
+
+.hoypresentamos_seccion_contenido {
+	float: left;
+	width: 325px;
+	height: 90px;
+}
+
+.hoypresentamos_seccion_contenido p {
+	margin: 2px 0 0 8px;
+}
+
+.hoypresentamos_seccion_foto {
+	width: 129px;
+	height: 90px;
+	float: left;
+}
+
+/*cierra*/
+/*los recuadros*/
+/*transparentes*/
+.bottom {
+	background-image: url("#{resource['imagenes_web:bottom.png']}");
+	width: 636px;
+	height: 27px;
+	margin-bottom: 20px;
+}
+
+
+p {
+	margin: 10px 0 10px 0;
+	color: #fff;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+/***********************************/
+/****Estilos sección noticias*******/
+.ordenadores {
+	padding: 0 0 0 35px;
+	background-image: url("#{resource['imagenes_web:ordenadores-noticias.png']}");
+	background-repeat: no-repeat;
+	background-position: 0 -1px;
+}
+
+.consolas {
+	padding: 0 0 0 35px;
+	background-image: url("#{resource['imagenes_web:consolas-noticias.png']}");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.arcade {
+	padding: 0 0 0 35px;
+	background-image: url("#{resource['imagenes_web:arcade-noticias.png']}");
+	background-repeat: no-repeat;
+	background-position: 3px 0;
+}
+
+.juegos {
+	padding: 0 0 0 35px;
+	background-image: url("#{resource['imagenes_web:juegos-noticias.png']}");
+	background-repeat: no-repeat;
+	background-position: 0 -1px;
+}
+/****Fin de estilos sección noticias**/
+/*************************************/
+
+#clear_both {
+	width: 960px;
+	height: 1px;
+	clear: both;
+}
+
+#footer{
+	background-image: url("#{resource['imagenes_web:fondo_footer.png']}");
+	width: 100%;
+	height: 43px; 
+    clear: both; 
+}
+
+/*******Contenido oculto*******/
+.oculto {
+	display: none;
+}
+/***Fin de Contenido oculto***/
+
+.noticias_contenido a{
+	margin-left: 445px;
+}
+
+.bbdd {
+	color: #fff;
+}
+
+
+

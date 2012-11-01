@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:corejsf="http://corejsf.com/facelets">
+   
+   <body>
+    	
+         	<h:form id="formLogin" rendered="#{!loginBB.usuarioEnSesion}">
+				<f:event type="postValidate" listener = "#{loginBB.validar}"/>
+		
+	  			<h:outputLabel for="usernameInput">Nombre de usuario</h:outputLabel>
+	  			<h:inputText id="usernameInput" value="#{loginBB.nombre}" immediate="true" /> <!-- require="true" -->
+	  			<br />
+	  			<h:outputLabel for="passwordInput">Contrasenya</h:outputLabel>
+	  			<h:inputSecret id="passwordInput" value="#{loginBB.contrasenya}" immediate="true" />  <!-- require="true" -->
+	  			<br />
+	  			<h:commandButton value="Login" action="#{loginBB.login}" />
+	  			<h:commandButton type="reset" value="Clear"/>
+	  		
+	  			<p><h:message for="formLogin" class="errorMessage" /></p>
+			</h:form>
+			
+			<h:form rendered="#{loginBB.usuarioEnSesion}">
+				<p>Bienvenido: #{loginBB.nombreUsuario} || <h:commandLink action="#{loginBB.logOut}" value="Log-Out" /> </p>
+			</h:form>   
+    
+    </body>     
+     
+</html>

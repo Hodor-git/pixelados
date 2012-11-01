@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+
+<h:head>
+	<!-- Libreria jQuery enlazada desde Google APIs-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js" type="text/javascript"></script>
+	<!-- Javascript -->
+	<h:outputScript library="javascript" name="menu.js" />
+	<!-- Estilos CSS -->
+	<h:outputStylesheet library="css" name="estilos.css"  />
+	<h:outputStylesheet library="css" name="lavalamp.css"  />
+	<h:outputStylesheet library="css" name="menu_desplegable.css"  />
+	<h:outputStylesheet library="css" name="menu_ordenadores.css"  />
+</h:head>
+ 
+<body>  
+   	  
+	      <div id="cabecera">
+	         <ui:insert name="heading">
+	            <ui:include src="/secciones/cabeceraGlobal/cabecera.xhtml"/>
+	         </ui:insert>
+	      </div>
+	      
+	      <div id="contenedor">
+	      
+	      	<div id="menu_principal">
+        	
+        		<div id="contenedor_menu">
+        			<ul class="lavaLampWithImage">
+    					<li><h:link outcome="/index" value="Inicio"/></li>
+    					<li><a href="#">Reg&iacute;strate</a></li>
+    					<li><a href="#">Foro</a></li>
+    					<li><a href="#">Contacto</a></li>
+					</ul>
+        		</div>
+        	
+        	</div>
+	      	
+	      	<div id="lateral_izquierdo">
+				
+				<div id="ordenadores">
+					<h:form>
+					<ul class="menu collapsible">
+				    	<li>
+					    	<a href="#">Commodore 8 bits</a>
+					    	<ul class="acitem">
+					    		<li><h:commandLink action="#{seccionInternaBB.mostrarOrdenador('commodorevic20','analisis')}" value="Commodore Vic-20" /></li>
+					    		<li><h:commandLink action="#{seccionInternaBB.mostrarOrdenador('commodore64','analisis')}" value="Commodore 64" /></li>
+					    		<li><h:commandLink action="#{seccionInternaBB.mostrarOrdenador('commodore128','analisis')}" value="Commodore 128" /></li>
+					    	</ul>
+				    	</li>
+						<li>
+					    	<a href="#">Amiga 16 bits</a>
+					    	<ul class="acitem">
+					    		<li><a href="#">Amiga 1000</a></li>
+						    	<li><a href="#">Amiga 500 / 2000</a></li>						
+					    	</ul>
+				    	</li>
+						<li>
+					    	<a href="#">Amiga 32 bits</a>
+					    	<ul class="acitem">
+					    		<li><a href="#">Amiga 1200</a></li>
+								<li><a href="#">Amiga 3000 / 4000</a></li>
+					    	</ul>
+				    	</li>
+				    	<li>
+					    	<a href="#">Sinclair 8 bits</a>
+					    	<ul class="acitem">
+						    	<li><a href="#">ZX-81</a></li>
+						    	<li><a href="#">Spectrum 16KB/48KB</a></li>
+						    	<li><a href="#">Spectrum 2+ / 3 / 3+</a></li>
+					    	</ul>
+				    	</li>
+				    	<li>
+					    	<a href="#">Sinclair QL</a>
+				    	</li>
+				    	<li>
+					    	<a href="#">Amstrad 8 Bits</a>
+					    	<ul class="acitem">
+						    	<li><a href="#">CPC 464/664</a></li>
+						    	<li><a href="#">CPC 6128</a></li>
+					    	</ul>
+				    	</li>
+				    	<li>
+					    	<a href="#">Amstrad PC 1512</a>
+				    	</li>
+				    	<li>
+					    	<a href="#">MSX</a>
+					    	<ul class="acitem">
+						    	<li><a href="#">MSX</a></li>
+						    	<li><a href="#">MSX 2</a></li>
+						    	<li><a href="#">MSX 2+</a></li>
+					    	</ul>
+				    	</li>
+				    	<li>
+					    	<a href="#">Atari 8 bits</a>
+					    	<ul class="acitem">
+						    	<li><a href="#">Atari 400</a></li>
+						    	<li><a href="#">Atari 800 / XL</a></li>
+						    	<li><a href="#">130XE</a></li>
+					    	</ul>
+				    	</li>
+						<li>
+					    	<a href="#">Atari ST</a>
+					    	<ul class="acitem">
+						    	<li><a href="#">520/1040 STFM/STE</a></li>
+						    	<li><a href="#">TT / Falcon 030</a></li>
+					    	</ul>
+				    	</li>
+						<li>
+					    	<a href="#">Sharp X68000</a>
+				    	</li>
+			    	</ul>
+					</h:form>
+				</div>
+			<!-- Fin de lateral izquierdo -->	
+			</div>
+			
+			<div id="lateral_derecho">
+				<h:form>
+				<div id="secciones">
+					<ul class="menu_lateral_derecho">
+						<li>
+					    	<h:commandLink action="#{contenidoWebBB.listarContenidoWeb('guiastutoriales')}" value="Guías y Tutoriales" />
+				    	</li>
+				    	<li>
+					    	<h:commandLink action="#{contenidoWebBB.listarContenidoWeb('articulo')}" value="Artículos" />
+				    	</li>
+				    	<li>
+					    	<h:commandLink action="#{contenidoWebBB.listarContenidoWeb('eljoystick')}" value="El Joystick" />
+				    	</li>
+				    	<li>
+					    	<h:commandLink action="#{contenidoWebBB.listarContenidoWeb('entrevista')}" value="Entrevistas" />
+				    	</li>
+			    	</ul>
+				</div>
+				</h:form>
+				<div id="secciones">
+					<ui:insert name="zonaAutenticacion">
+	            		<ui:include src="/secciones/autenticacionHelper/zonaAutenticacion.xhtml" />
+	            	</ui:insert>
+				</div>
+							
+				<div id="fotosdeldia">
+					
+				</div>
+				
+			</div> 
+	      
+	      	<div id="principal">
+	         	<ui:insert name="contenido"/>
+	      	</div>
+	      	
+	      	<div id="clear_both">
+				
+			</div>
+	      
+	      <!-- Final de contenedor -->
+	      </div>
+	      
+	      <div id="footer">
+			
+		  </div>
+
+</body> 
+
+</html>
