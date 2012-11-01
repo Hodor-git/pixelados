@@ -30,22 +30,27 @@
         </dependency>
 
         <!-- Import the Common Annotations API (JSR-250), we use provided scope
-            as the API is included in JBoss AS 7 -->
+            as the API is included in JBoss AS 7
         <dependency>
             <groupId>org.jboss.spec.javax.annotation</groupId>
             <artifactId>jboss-annotations-api_1.1_spec</artifactId>
             <scope>provided</scope>
-        </dependency>
+        </dependency> -->
+        
+        <dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>jsr250-api</artifactId>
+			<version>1.0</version>
+		</dependency>
 
         <!-- Import the EJB API, we use provided scope as the API is included in
-              JBoss AS 7 -->
+              JBoss AS 7 
         <dependency>
             <groupId>org.jboss.spec.javax.ejb</groupId>
             <artifactId>jboss-ejb-api_3.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
         
-        <!-- JEE Api incluída en JBoss -->
         <dependency>
         	<groupId>org.jboss.spec</groupId>
         	<artifactId>jboss-javaee-6.0</artifactId>
@@ -58,7 +63,14 @@
                     <artifactId>xalan</artifactId>
                 </exclusion>
             </exclusions>
-    	</dependency>
+    	</dependency>-->
+    	
+    	<dependency>
+    		<groupId>javax</groupId>
+    		<artifactId>javaee-api</artifactId>
+    		<version>6.0</version>
+    		<scope>provided</scope>
+		</dependency>
 		
 		<!-- Hibernate -->
 		

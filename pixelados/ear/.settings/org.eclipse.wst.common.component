@@ -8,6 +8,9 @@
         <dependent-module archiveName="pixelados-ejb-7.1.2.M1.jar" deploy-path="/" handle="module:/resource/pixelados-ejb/pixelados-ejb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="jsr250-api-1.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="hibernate-core-4.1.6.Final.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/hibernate/hibernate-core/4.1.6.Final/hibernate-core-4.1.6.Final.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
