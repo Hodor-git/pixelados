@@ -29,42 +29,14 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Import the Common Annotations API (JSR-250), we use provided scope
-            as the API is included in JBoss AS 7
-        <dependency>
-            <groupId>org.jboss.spec.javax.annotation</groupId>
-            <artifactId>jboss-annotations-api_1.1_spec</artifactId>
-            <scope>provided</scope>
-        </dependency> -->
-        
+        <!-- Dependencias para Common Annotations API (JSR-250) -->
         <dependency>
 			<groupId>javax.annotation</groupId>
 			<artifactId>jsr250-api</artifactId>
 			<version>1.0</version>
 		</dependency>
-
-        <!-- Import the EJB API, we use provided scope as the API is included in
-              JBoss AS 7 
-        <dependency>
-            <groupId>org.jboss.spec.javax.ejb</groupId>
-            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        
-        <dependency>
-        	<groupId>org.jboss.spec</groupId>
-        	<artifactId>jboss-javaee-6.0</artifactId>
-        	<version>3.0.0.Final</version>
-        	<type>pom</type>
-        	<scope>provided</scope>
-        	<exclusions>
-                <exclusion>
-                    <groupId>xalan</groupId>
-                    <artifactId>xalan</artifactId>
-                </exclusion>
-            </exclusions>
-    	</dependency>-->
     	
+    	<!-- Dependencias para JavaEE (incluye EJB 3.1) -->
     	<dependency>
     		<groupId>javax</groupId>
     		<artifactId>javaee-api</artifactId>
@@ -72,8 +44,7 @@
     		<scope>provided</scope>
 		</dependency>
 		
-		<!-- Hibernate -->
-		
+		<!-- Hibernate -->		
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -85,14 +56,7 @@
    			<artifactId>hibernate-entitymanager</artifactId>
    			<version>4.1.6.Final</version>
 		</dependency>
-		
-		<!-- MySQL
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.9</version>
-		</dependency>
-		 -->
+		<!-- Fin de Hibernate -->
 		 
 		 <!-- Dependencias de Arquillian y JBoss AS 7 Managed container -->
 		 
