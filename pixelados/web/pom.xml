@@ -22,21 +22,20 @@
 
     <dependencies>
 
-        <!-- Import the ejb project so that the JSF managed bean can use the EJB -->
+        <!-- Importa pixelados-ejb (necesario para utilizar EJB en los beans) -->
         <dependency>
             <groupId>es.vampitel</groupId>
             <artifactId>pixelados-ejb</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- Import the CDI API, we use provided scope as the API is included
-            in JBoss AS 7 -->
+        
+        <!-- Inyección de dependencias CDI -->
         <dependency>
-            <groupId>javax.enterprise</groupId>
-            <artifactId>cdi-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>1.1-20120918</version>
+		</dependency>
         
         <!-- Dependencias para Common Annotations API (JSR-250) -->
         <dependency>

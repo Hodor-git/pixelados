@@ -21,13 +21,12 @@
 
     <dependencies>
 
-        <!-- Import the CDI API, we use provided scope as the API is included
-    in JBoss AS 7 -->
+        <!-- Inyección de dependencias CDI -->
         <dependency>
-            <groupId>javax.enterprise</groupId>
-            <artifactId>cdi-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>1.1-20120918</version>
+		</dependency>
 
         <!-- Dependencias para Common Annotations API (JSR-250) -->
         <dependency>

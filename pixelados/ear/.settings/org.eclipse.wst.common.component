@@ -8,6 +8,18 @@
         <dependent-module archiveName="pixelados-ejb-7.1.2.M1.jar" deploy-path="/" handle="module:/resource/pixelados-ejb/pixelados-ejb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="cdi-api-1.1-20120918.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/enterprise/cdi-api/1.1-20120918/cdi-api-1.1-20120918.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="el-api-2.2.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/el/el-api/2.2/el-api-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="jsr250-api-1.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
@@ -20,7 +32,7 @@
         <dependent-module archiveName="jboss-logging-3.1.0.GA.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="jboss-transaction-api_1.1_spec-1.0.1.Final.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar">
+        <dependent-module archiveName="jboss-transaction-api_1.1_spec-1.0.0.Final.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar">
